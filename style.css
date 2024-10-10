@@ -69,7 +69,7 @@ nav ul li a:hover {
     width: 100px;
     float: right;
     margin-left: 20px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 @media (max-width: 600px) {
