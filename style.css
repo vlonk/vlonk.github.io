@@ -38,6 +38,7 @@ section {
     max-width: 800px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #d8e2dc;
 }
 
 footer {
@@ -60,10 +61,7 @@ p {
     line-height: 1.6;
 }
 
-/* nav ul li a:hover {
+nav ul li a:hover {
     color: #d8e2dc;
-} */
-
-section {
-    border: 1px solid #d8e2dc;
 }
+
