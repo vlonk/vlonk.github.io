@@ -15,7 +15,7 @@
 .project-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline; /* Aligns date with the title */
     margin-bottom: 0.5em;
 }
 
@@ -30,11 +30,13 @@
     font-size: 0.9em;
     color: #888;
     font-style: italic;
+    margin-left: 1em;
 }
 
 .project p {
     font-size: 1em;
     line-height: 1.5;
+    margin-bottom: 0.5em;
 }
 
 .project p strong {
@@ -47,4 +49,9 @@
     font-size: 0.95em;
     color: #555;
     line-height: 1.6;
+}
+
+.project:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
 }
