@@ -67,12 +67,11 @@ nav ul li a:hover {
     color: #d8e2dc;
 }
 
-.side-gif {
+/* .side-gif {
     width: 100px;
     float: right;
     margin-left: 20px;
-    /* border: 1px solid red; */
-}
+} */
 
 @media (max-width: 600px) {
     .side-gif {
