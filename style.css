@@ -92,7 +92,7 @@ nav ul li a:hover {
     margin: 1em auto; 
 }
 
-#experience, #projects, #contact {
+#experience, #projects {
     background-color: transparent;
     border: none;
     box-shadow: none;
