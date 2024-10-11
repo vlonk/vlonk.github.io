@@ -39,8 +39,8 @@ section {
     margin: 1em auto;
     max-width: 800px;
     border-radius: 10px;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
-    /* border: 1px solid #d8e2dc; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border: 1px solid #d8e2dc;
 }
 
 footer {
@@ -90,4 +90,11 @@ nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     display: block;
     margin: 1em auto; 
+}
+
+#experience, #projects {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 2em 0;
 }
