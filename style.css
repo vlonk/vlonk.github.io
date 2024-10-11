@@ -81,3 +81,13 @@ nav ul li a:hover {
         width: 80px;
     }
 }
+
+.about-picture {
+    width: 150px;
+    height: auto;
+    border-radius: 50%; 
+    border: 3px solid #a8c686; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    display: block;
+    margin: 1em auto; 
+}
