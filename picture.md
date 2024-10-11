@@ -1,0 +1,1 @@
+![My Picture](/Users/ny/vlonk.github.io/vlonk.github.io/NY_SIDE_1-min (1).jpg)
