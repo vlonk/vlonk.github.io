@@ -1,1 +1,1 @@
-![My Picture](/Users/ny/vlonk.github.io/vlonk.github.io/NY.jpg)
+![My Picture](https://vlonk.github.io/vlonk.github.io/NY.jpg)
