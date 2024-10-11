@@ -1,1 +1,1 @@
-![My Picture](https://vlonk.github.io/vlonk.github.io/NY.JPG)
+![My Picture](https://vlonk.github.io/vlonk.github.io/NY.jpg)
