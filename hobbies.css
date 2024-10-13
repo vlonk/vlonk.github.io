@@ -82,7 +82,7 @@
 }
 
 .image-slideshow img:nth-child(1) {
-    animation-delay: 0s;
+    animation-delay: 5s;
 }
 
 .image-slideshow img:nth-child(2) {
@@ -94,8 +94,8 @@
 }
 
 @keyframes slideshow {
-    0% { opacity: 0; }
+    0% { opacity: 1; }
     33% { opacity: 1; }
-    66% { opacity: 0; }
-    100% { opacity: 0; }
+    66% { opacity: 1; }
+    100% { opacity: 1; }
 }
