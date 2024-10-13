@@ -97,6 +97,8 @@
     width: 100%;
     height: 180px;
     overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .image-slideshow img {
@@ -104,8 +106,10 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     opacity: 0;
-    animation: slideshow 9s infinite;
+    animation: slideshow 9s infinite ease-in-out;
+    transition: opacity 1s ease-in-out;
 }
 
 .image-slideshow img:nth-child(1) {
@@ -120,7 +124,8 @@
 
 @keyframes slideshow {
     0% { opacity: 0; }
+    20% { opacity: 1; }
     33% { opacity: 1; }
-    66% { opacity: 0; }
+    53% { opacity: 0; }
     100% { opacity: 0; }
 }
