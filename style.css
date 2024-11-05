@@ -92,7 +92,7 @@ nav ul li a:hover {
     margin: 1em auto; 
 }
 
-#experience, #projects, #contact {
+#experience, #projects, #contact, #shadow-host-companion {
     background-color: transparent;
     border: none;
     margin: none;
