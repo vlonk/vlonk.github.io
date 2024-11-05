@@ -81,7 +81,7 @@
     transition: opacity 1s ease-in-out;
 }
 
-.image-slideshow img:nth-child(1) {
+/* .image-slideshow img:nth-child(1) {
     animation-delay: 5s;
 }
 
@@ -91,7 +91,7 @@
 
 .image-slideshow img:nth-child(3) {
     animation-delay: 15s;
-}
+} */
 
 @keyframes slideshow {
     0% { opacity: 1; }
