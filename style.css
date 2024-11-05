@@ -95,6 +95,7 @@ nav ul li a:hover {
 #experience, #projects, #contact {
     background-color: transparent;
     border: none;
+    margin: none;
     box-shadow: none;
-    padding: 2em 0;
+    padding: 0;
 }
