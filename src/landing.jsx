@@ -7,7 +7,7 @@ const roles = ["Software Engineer", "Designer", "Problem Solver", "Matcha Lover"
 const Landing = () => {
     const [typedText, setTypedText] = useState("");
     const [currentRole, setCurrentRole] = useState(0);
-    const fullText = "hello, i am Ny Dang.";
+    const fullText = "hello, i'm Ny Dang.";
 
     // typewriter effect for the text
     useEffect(() => {
