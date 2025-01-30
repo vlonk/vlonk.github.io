@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import "./landing.css";
 
-const roles = ["Software Engineer", "Problem Solver", "Designer", "Matcha Lover"];
+const roles = ["Software Engineer", "Designer", "Problem Solver", "Matcha Lover", "V1 Climber"];
 
 const Landing = () => {
     const [typedText, setTypedText] = useState("");
     const [currentRole, setCurrentRole] = useState(0);
     const fullText = "hello, i am Ny Dang.";
 
-    // Typewriter effect for the text
+    // typewriter effect for the text
     useEffect(() => {
         if (typedText.length < fullText.length) {
             const timeout = setTimeout(() => {
@@ -19,7 +19,7 @@ const Landing = () => {
         }
     }, [typedText, fullText]);
 
-    // Role rotation effect
+    // role rotation effect
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentRole((prev) => (prev + 1) % roles.length);
