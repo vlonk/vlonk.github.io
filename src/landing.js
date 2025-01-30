@@ -31,11 +31,11 @@ const Landing = () =>
         }, 3000);
         return () => clearInterval(interval);
     }, []);
-    return
+    return 
     (
-        <div className = "container">
-            <div className = "landing">
-            <img src={`${process.env.PUBLIC_URL}/weblogo.png`} alt="standing on business" />
+        <div className="container">
+            <div className="landing">
+                <img src={`${process.env.PUBLIC_URL}/weblogo.png`} alt="standing on business" />
                 <h1>{typedText}</h1>
                 <h2>{roles[currentRole]}</h2>
                 <button onClick={() => window.scrollTo(0, document.body.scrollHeight)}>
