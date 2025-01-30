@@ -7,9 +7,9 @@ const roles = ["Software Engineer", "Problem Solver", "Designer", "Matcha Lover"
 const Landing = () => {
     const [typedText, setTypedText] = useState("");
     const [currentRole, setCurrentRole] = useState(0);
-    const fullText = "hello, i am Ny Dang.";
+    const fullText = "hello, i am Ny Dang";
 
-    // Typewriter effect for the text
+    // typewriter effect
     useEffect(() => {
         if (typedText.length < fullText.length) {
             const timeout = setTimeout(() => {
@@ -19,7 +19,7 @@ const Landing = () => {
         }
     }, [typedText, fullText]);
 
-    // Role rotation effect
+    // title change
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentRole((prev) => (prev + 1) % roles.length);
@@ -41,7 +41,6 @@ const Landing = () => {
     );
 };
 
-// Render the Landing component into the root div in index.html
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>

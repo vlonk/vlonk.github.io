@@ -1,16 +1,17 @@
-@font-face {
+/* @font-face {
     font-family: 'Myfont';
-    src: url('./Myfont-Regular.woff2') format('woff2'),
-        url('./Myfont-Regular.woff') format('woff');
+    src: url('/Myfont-Regular.woff2') format('woff2'),
+        url('/Myfont-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-}
+} */
 
 body 
 {
     margin: 0;
-    font-family: 'Myfont', sans-serif;
+    font-family: 'JetBrains Mono', monospace;
+    /* font-family: 'Myfont', sans-serif; */
     text-align: center;
     background-color: #ffffff;
     background-image:
@@ -62,7 +63,8 @@ button
     padding: 10px 20px;
     margin-top: 80px;
     cursor: pointer;
-    font-family: 'Myfont', sans-serif;
+    font-family: 'JetBrains Mono', monospace;
+    /* font-family: 'Myfont', sans-serif; */
 }
 
 @keyframes fadeIn {
