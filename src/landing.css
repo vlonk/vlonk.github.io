@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Myfont';
-    src: url('./Myfont-Regular.woff2') format('woff2'),
-        url('./Myfont-Regular.woff') format('woff');
+    src: url('../Myfont-Regular.woff2') format('woff2'),
+        url('../Myfont-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -26,13 +26,15 @@ body
     align-items: center;
     justify-content: flex-start;
     min-height: 90vh;
-    padding-top: 400px;
+    padding-top: 75px;
 }
 
 .landing img {
-    max-width: 650px;
+    max-width: 400px;
     margin-bottom: 50px;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1, h2
