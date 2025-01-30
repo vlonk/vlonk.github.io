@@ -31,7 +31,6 @@ const Landing = () =>
         }, 3000);
         return () => clearInterval(interval);
     }, []);
-
     return
     (
         <div className = "container">
