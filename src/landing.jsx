@@ -12,7 +12,7 @@ const Landing = () => {
     const [showNav, setShowNav] = useState(false); // fade animation
     const fullText = "hello, i'm Ny Dang.";
     const additionalText =
-        "thanks for clicking on my page! this is still under construction at the moment.";
+        "thanks for clicking on my page! this is still under construction at the moment. hopefully you can read my handwriting :)";
 
 
     // typewriter effect for hello text
@@ -49,12 +49,19 @@ const Landing = () => {
         setShowNav(true);
     };
 
+    const handleHome = () => {
+        setShowButton(true);
+        setShowNav(false);
+        setTypedText("");
+        setSubText("");
+    };
+
     return (
         <div className="container">
             {showNav && (
                 <nav className="nav">
                     <ul>
-                        <li>HOME</li>
+                        <li onClick = {handleHome} style = {{cursor: "pointer"}}>HOME</li>
                         <li>ABOUT ME</li>
                         <li>PROJECTS</li>
                         {/* <li>CONTACT</li> */}
