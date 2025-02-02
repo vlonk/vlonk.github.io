@@ -7,6 +7,8 @@ const roles = ["Software Engineer", "Designer", "Problem Solver", "Matcha Lover"
 const Landing = () => {
     const [typedText, setTypedText] = useState("");
     const [currentRole, setCurrentRole] = useState(0);
+    const [showButton, setShowButton] = useState(true); // for toggling pages
+    const [showNav, setShowNav] = useState(false); // fade animation
     const fullText = "hello, i'm Ny Dang.";
 
     // typewriter effect for the text
@@ -27,15 +29,33 @@ const Landing = () => {
         return () => clearInterval(interval);
     }, []);
 
+    // button click
+    const handleContinue = () => {
+        setShowButton(false);
+        setShowNav(true);
+    };
+
     return (
         <div className="container">
+            {showNav && (
+                <nav className="nav">
+                    <ul>
+                        <li>HOME</li>
+                        <li>ABOUT ME</li>
+                        <li>PROJECTS</li>
+                        <li>CONTACT</li>
+                    </ul>
+                </nav>
+            )}
             <div className="landing">
                 <img src="/weblogo.png" alt="standing on business" />
                 <h1>{typedText}</h1>
                 <h2>{roles[currentRole]}</h2>
-                <button onClick={() => window.scrollTo(0, document.body.scrollHeight)}>
-                    continue
-                </button>
+                {showButton && (
+                    <button onClick={handleContinue} className={showNav ? "fade-out" : ""}>
+                        continue.
+                    </button>
+                )}
             </div>
         </div>
     );
