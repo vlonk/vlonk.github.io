@@ -59,10 +59,11 @@ h2
 }
 
 button {
-    background: #f0f0f0;
+    background-color: rgba(52, 87, 78, 1); 
     border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 12px 30px;
+    color: white; 
+    border-radius: 20px;
+    padding: 12px 25px;
     margin-top: 80px;
     cursor: pointer;
     font-family: 'Myfont', sans-serif;
@@ -71,7 +72,7 @@ button {
 }
 
 button:hover {
-    background: #e6e6e6;
+    background-color: rgba(52, 87, 78, 0.8);
 }
 
 @keyframes fadeOut {

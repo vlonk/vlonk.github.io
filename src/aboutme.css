@@ -1,16 +1,40 @@
+.about-me-page {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; 
+    gap: 50px;
+}
+
+.left-section {
+    flex: 1; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+}
+
+.right-section {
+    flex: 2; 
+    display: flex;
+    flex-direction: column;
+    gap: 50px; 
+}
+
 .about-me-section {
+    max-width: 700px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: row;
     height: auto;
-    padding: 40px 20px;
-    text-align: center;
+    /* padding: 40px 20px; */
+    text-align: left;
 }
 
 .about-content {
-    flex: 1;
-    padding: 0 40px;
+    max-width: 700px;
+    font-size: 1.7rem;
+    /* width: 600px; */
 }
 
 .separator {
@@ -54,4 +78,85 @@
 .icon:hover {
     transform: scale(1.2);
     color: rgba(52, 87, 78, 0.8);
+}
+
+.resume-button {
+    margin-top: 50px; 
+    padding: 10px 15px; 
+    font-size: 18px;
+    font-family: inherit; 
+    color: white; 
+    border: 1px solid #ccc;
+    background-color: rgba(52, 87, 78, 1); 
+    /* border: none;  */
+    border-radius: 20px; 
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.resume-button:hover {
+    transform: scale(1.05); 
+    background-color: rgba(52, 87, 78, 0.8); 
+}
+
+.experience-title {
+    margin-top: 50px;
+    max-width: 700px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px; 
+    text-align: left;
+    color: black;
+}
+
+.experience-item {
+    margin-bottom: 35px; 
+    font-size: 1.5rem;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: baseline;
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+}
+
+.company-name {
+    font-size: 1.6rem;
+    font-weight: bold; 
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.experience-dates {
+    font-size: 1.3rem; 
+    /* font-weight: bold;  */
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.role-title {
+    font-size: 1.4rem; 
+    color: #27ae60; 
+    margin: 0; 
+    text-align: left;
+    padding: 0;
+}
+
+.experience-details {
+    margin: 0;
+    padding-left: 20px; 
+    list-style: disc; 
+    font-size: 1.5rem; 
+    text-align: left;
+}
+
+.experience-details li {
+    margin-top: 7px;
+    margin-bottom: 5px; 
+    font-size: 1.5rem;
 }
