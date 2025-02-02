@@ -94,6 +94,14 @@ button:hover {
     }
 }
 
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
 .fade-out {
     animation: fadeOut 0.5s ease-out;
     opacity: 0;
@@ -111,7 +119,7 @@ button:hover {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 25px;
     padding: 0;
     margin: 0;
 }
@@ -120,6 +128,11 @@ nav li {
     cursor: pointer;
     font-size: 1.5rem;
     text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+
+nav li:hover {
+    animation: shake 0.5s ease-in-out;
 }
 
 .additional-text {
@@ -128,4 +141,10 @@ nav li {
     line-height: 1.5;
     color: #333;
     animation: fadeIn 1.5s ease-in-out;
+    min-height: 2rem;
+    visibility: hidden;
+}
+
+.additional-text.visible {
+    visibility: visible;
 }

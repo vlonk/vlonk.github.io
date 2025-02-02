@@ -57,7 +57,7 @@ const Landing = () => {
                         <li>HOME</li>
                         <li>ABOUT ME</li>
                         <li>PROJECTS</li>
-                        <li>CONTACT</li>
+                        {/* <li>CONTACT</li> */}
                     </ul>
                 </nav>
             )}
@@ -70,7 +70,7 @@ const Landing = () => {
                         continue.
                     </button>
                 )}
-                {showNav && <p className="additional-text">{subText}</p>}
+                <p className={`additional-text ${showNav ? "visible" : ""}`}>{subText}</p>
             </div>
         </div>
     );
