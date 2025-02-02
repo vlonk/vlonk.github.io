@@ -6,12 +6,16 @@ const roles = ["Software Engineer", "Designer", "Problem Solver", "Matcha Lover"
 
 const Landing = () => {
     const [typedText, setTypedText] = useState("");
+    const [subText, setSubText] = useState("");
     const [currentRole, setCurrentRole] = useState(0);
     const [showButton, setShowButton] = useState(true); // for toggling pages
     const [showNav, setShowNav] = useState(false); // fade animation
     const fullText = "hello, i'm Ny Dang.";
+    const additionalText =
+        "thanks for clicking on my page! this is still under construction at the moment.";
 
-    // typewriter effect for the text
+
+    // typewriter effect for hello text
     useEffect(() => {
         if (typedText.length < fullText.length) {
             const timeout = setTimeout(() => {
@@ -20,6 +24,16 @@ const Landing = () => {
             return () => clearTimeout(timeout);
         }
     }, [typedText, fullText]);
+
+    // typewriter effect for intro text
+    useEffect(() => {
+        if (showNav && subText.length < additionalText.length) {
+            const timeout = setTimeout(() => {
+                setSubText(additionalText.slice(0, subText.length + 1));
+            }, 50);
+            return () => clearTimeout(timeout);
+        }
+    }, [subText, additionalText, showNav]);
 
     // role rotation effect
     useEffect(() => {
@@ -56,6 +70,7 @@ const Landing = () => {
                         continue.
                     </button>
                 )}
+                {showNav && <p className="additional-text">{subText}</p>}
             </div>
         </div>
     );
