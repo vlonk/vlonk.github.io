@@ -111,6 +111,7 @@ button:hover {
     display: flex;
     justify-content: center;
     position: absolute;
+    z-index: 1000;
     top: 40px;
     width: 100%
     /* right: 20px; */

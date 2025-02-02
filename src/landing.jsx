@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import "./landing.css";
+import AboutMe from "./aboutme";
 
 const roles = ["Software Engineer", "Designer", "Problem Solver", "Matcha Lover", "V1 Climber"];
 
@@ -10,11 +11,16 @@ const Landing = () => {
     const [currentRole, setCurrentRole] = useState(0);
     const [showButton, setShowButton] = useState(true); // for toggling pages
     const [showNav, setShowNav] = useState(false); // fade animation
+    const [showAboutMe, setShowAboutMe] = useState(false);
     const fullText = "hello, i'm Ny Dang.";
     const additionalText =
         "thanks for clicking on my page! this is still under construction at the moment. hopefully you can read my handwriting :)";
-
-
+    
+    const handleAboutMe = () => {
+        setShowAboutMe(true);
+        setShowNav(true);
+    };
+    
     // typewriter effect for hello text
     useEffect(() => {
         if (typedText.length < fullText.length) {
@@ -54,6 +60,7 @@ const Landing = () => {
         setShowNav(false);
         setTypedText("");
         setSubText("");
+        setShowAboutMe(false);
     };
 
     return (
@@ -62,23 +69,26 @@ const Landing = () => {
                 <nav className="nav">
                     <ul>
                         <li onClick = {handleHome} style = {{cursor: "pointer"}}>HOME</li>
-                        <li>ABOUT ME</li>
+                        <li onClick={handleAboutMe} style={{ cursor: "pointer" }}>ABOUT ME</li>
                         <li>PROJECTS</li>
                         {/* <li>CONTACT</li> */}
                     </ul>
                 </nav>
             )}
-            <div className="landing">
-                <img src="/weblogo.png" alt="standing on business" />
-                <h1>{typedText}</h1>
-                <h2>{roles[currentRole]}</h2>
-                {showButton && (
-                    <button onClick={handleContinue} className={showNav ? "fade-out" : ""}>
-                        continue.
-                    </button>
-                )}
-                <p className={`additional-text ${showNav ? "visible" : ""}`}>{subText}</p>
-            </div>
+            {showAboutMe && <AboutMe />}
+            {!showAboutMe && (
+                <div className="landing">
+                    <img src="/weblogo.png" alt="standing on business" />
+                    <h1>{typedText}</h1>
+                    <h2>{roles[currentRole]}</h2>
+                    {showButton && (
+                        <button onClick={handleContinue} className={showNav ? "fade-out" : ""}>
+                            continue.
+                        </button>
+                    )}
+                    <p className={`additional-text ${showNav ? "visible" : ""}`}>{subText}</p>
+                </div>
+            )}
         </div>
     );
 };
